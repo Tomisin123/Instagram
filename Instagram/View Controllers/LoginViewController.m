@@ -53,7 +53,7 @@
 
 - (IBAction)logIn:(id)sender {
     if ([self checkFields]){
-        [self registerUser];
+        [self loginUser];
     }
 }
 
