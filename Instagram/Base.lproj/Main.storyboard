@@ -92,7 +92,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBv-EK-khb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBv-EK-khb">
                                                     <rect key="frame" x="78" y="283" width="269" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="31" id="pKp-tL-zcm"/>
@@ -188,7 +188,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fue-Ea-exR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fue-Ea-exR">
                                         <rect key="frame" x="57" y="446" width="301" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -278,8 +278,8 @@
                                     <outletCollection property="gestureRecognizers" destination="khg-74-Qwq" appends="YES" id="f3c-OM-37n"/>
                                 </connections>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Post Destription" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-As-dBN">
-                                <rect key="frame" x="188" y="111" width="206" height="150"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-As-dBN">
+                                <rect key="frame" x="178" y="111" width="206" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -319,6 +319,7 @@
         <!--Item-->
         <scene sceneID="QEy-bo-Re5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gf3-rI-hbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="igO-eQ-b0f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="R9D-uI-CJP"/>
                     <toolbarItems/>
@@ -332,7 +333,6 @@
                         <segue destination="v8n-OE-IED" kind="relationship" relationship="rootViewController" id="yhq-TV-XQC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gf3-rI-hbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1196" y="872"/>
         </scene>

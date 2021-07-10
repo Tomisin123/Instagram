@@ -38,6 +38,10 @@
     [self.tableView insertSubview:self.refreshControl atIndex:0];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self fetchPosts];
+}
+
 
 - (IBAction)logOut:(id)sender {
     

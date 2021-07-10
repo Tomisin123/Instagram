@@ -11,7 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ComposeViewControllerDelegate
 
-- (void)didPost;
+- (IBAction)didTapCancel:(id)sender;
+- (IBAction)didTapPost:(id)sender;
+- (IBAction)didTapPicture:(id)sender;
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info;
 
 @end
 

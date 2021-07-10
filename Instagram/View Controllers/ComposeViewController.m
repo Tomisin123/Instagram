@@ -35,17 +35,24 @@
     }
 
     [self presentViewController:self.imagePicker animated:YES completion:nil];
+    
+    [[self.textCaption layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    [[self.textCaption layer] setBorderWidth:3];
+    [[self.textCaption layer] setCornerRadius:15];
 }
 
 - (IBAction)didTapCancel:(id)sender {
+    NSLog(@"Tapped Cancel");
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.tabBarController setSelectedIndex:0];
 }
 
 - (IBAction)didTapPost:(id)sender {
-    
+    NSLog(@"Tapped Post");
     [Post postUserImage:self.image withCaption:self.textCaption.text withCompletion:^(BOOL succeeded, NSError * _Nullable error) {
             if (succeeded) {
                 [self dismissViewControllerAnimated:YES completion:nil];
+                [self.tabBarController setSelectedIndex:0];
             }
             else{
                 NSLog(@"Error creating post: %@", error.localizedDescription);
